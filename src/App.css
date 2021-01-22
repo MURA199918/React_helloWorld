@@ -3,6 +3,12 @@ h1 {
   font-size: xx-large;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+}
+
 .App {
   text-align: center;
 }
