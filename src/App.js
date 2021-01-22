@@ -34,8 +34,9 @@ class App extends React.Component {
 
   render() {
     return (
-     <div>
-      <div>
+     <div className="app-main">
+      <div className="main">
+        <div>
         <h1>Hello {this.state.userName} from Bridgelabz</h1>
         <img src={BridgeLabzLogo} onClick={this.onClick}
            alt="The Bridgelabz logo: a Bridge to Employement through lab works" />
@@ -43,6 +44,20 @@ class App extends React.Component {
       <div className="text-box">
         <input onChange={this.onNameChange} />
         <span className="error-output">{this.state.nameError}</span>
+      </div>
+      <div>
+        At Bridgelabz we're a community of
+        <ul>
+          <li>technologists</li>
+          <li>thinkers</li>
+          <li>builders</li>
+        </ul>
+        Working together to keep the Tech Employability at Engineers alive......
+        <br />
+           <br />
+        To Know about us, visit <a href="http://bridgelabz.com/" rel="noreferrer" target="_blank">Bridgelabz</a> to learn even more about our mission
+        i.e <b>Employability to All</b>
+        </div>
       </div>
      </div>
     );
