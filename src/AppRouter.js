@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Welcome from './Components/Welcome';
 import HomePage from './Pages/HomePage';
 import WelcomePage from './Pages/WelcomePage';
+import DashBoard from './Pages/DashBoardPage';
 class AppRouter extends React.Component {
 
   render() {
@@ -15,6 +16,7 @@ class AppRouter extends React.Component {
           <Switch>
             <Route path="/home" component={Home}></Route>
             <Route path="/" component={Welcome} exact></Route>
+            <Route path="/dashboard" component={DashBoard}></Route>
           </Switch>
         </Router>
       </div>

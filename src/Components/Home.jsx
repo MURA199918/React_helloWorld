@@ -32,6 +32,10 @@ class App extends React.Component {
     }
   }
 
+  goToDashBoard = (event => {
+    this.props.history.push('/dashboard')
+  })
+
   render() {
     return (
      <div className="app-main">
@@ -58,6 +62,7 @@ class App extends React.Component {
         To Know about us, visit <a href="http://bridgelabz.com/" rel="noreferrer" target="_blank">Bridgelabz</a> to learn even more about our mission
         i.e <b>Employability to All</b>
         </div>
+        <button onClick={this.goToDashBoard}>Go To DashBoard Page</button>
       </div>
      </div>
     );
