@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Components/Home';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Welcome from './Components/Welcome';
 class App extends React.Component {
 
   render() {
@@ -10,9 +11,8 @@ class App extends React.Component {
       <div className="app-main">
         <Router>
           <Switch>
-            <Route path="">
-              <Home />
-            </Route>
+            <Route path="/" component={Home} exact></Route>
+            <Route path="/welcome" component={Welcome}></Route>
           </Switch>
         </Router>
       </div>
