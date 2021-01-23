@@ -13,8 +13,8 @@ class AppRouter extends React.Component {
       <div className="app-main">
         <Router>
           <Switch>
-            <Route path="/" component={Home} exact></Route>
-            <Route path="/welcome" component={Welcome}></Route>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/" component={Welcome} exact></Route>
           </Switch>
         </Router>
       </div>
